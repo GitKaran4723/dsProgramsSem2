@@ -19,9 +19,15 @@ void main(){
     int arr [] = {1, 5, 8, 9, 11, 18, 20};
     int l = sizeof(arr)/sizeof(arr[0]);
     int s = 0;
-    int key = 20;
+    int key = 9;
 
     int res = binarySearch(arr, key, s, l-1);
 
-    printf("Element found at %d", res);
+    if(res == -1){
+        printf("Element not found");
+    }
+    else{
+        printf("Element found at %d", res);
+    }
+
 }
